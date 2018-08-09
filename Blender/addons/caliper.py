@@ -447,7 +447,7 @@ def CaliperCreation(context):
 	
 	# Now lets see if we can add a text object
 	crv = bpy.data.curves.new("length", 'FONT')
-	crv.align = 'CENTER'
+	crv.align_x = 'CENTER'
 	crv.offset_y = 0.25
 	crv.extrude = 0.05
 	text = bpy.data.objects.new(crv.name, crv)
